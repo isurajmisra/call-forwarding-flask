@@ -1,0 +1,4 @@
+web: python manage.py db upgrade
+web: python manage.py dbseed
+web: ngrok http $PORT
+web: python manage.py runserver 0.0.0.0:$PORT
